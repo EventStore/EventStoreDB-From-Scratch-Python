@@ -19,8 +19,7 @@ print("************************");
 print("🎉 Congratulations, you have written an event!");
 print("Stream: " + event_stream);
 print("Event Type: " + event_type);
-print("Event Body: {\"id\":\"1\",\"importantData\":\"some value\"}");
+print("Event Body: " + new_event.data);
 print("************************");
 
 client.close()
-
