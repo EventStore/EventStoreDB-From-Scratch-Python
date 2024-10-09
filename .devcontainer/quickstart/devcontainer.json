@@ -3,7 +3,7 @@
 {
 	"name": "quickstart",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python",
+	"image": "mcr.microsoft.com/devcontainers/python:3.12",
 	"postCreateCommand": "sudo cp .devcontainer/quickstart/welcome.txt /usr/local/etc/vscode-dev-containers/first-run-notice.txt",
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
