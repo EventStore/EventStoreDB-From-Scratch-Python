@@ -7,9 +7,9 @@ events = client.get_stream("SampleStream")
 for event in events:
     print("************************");
     print("You have read an event!");
-    print("Stream: " + event.streamId);
+    print("Stream: " + event.stream_name);
     print("Event Type: " + event.type);
-    print("Event Body: " + event.data);
+    print("Event Body: " + event.data.decode());
     print("************************");
 
 client.close()

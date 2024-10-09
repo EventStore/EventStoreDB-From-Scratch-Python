@@ -19,7 +19,7 @@ print("************************");
 print("🎉 Congratulations, you have written an event!");
 print("Stream: " + event_stream);
 print("Event Type: " + event_type);
-print("Event Body: " + new_event.data);
+print("Event Body: " + new_event.data.decode());
 print("************************");
 
 client.close()
