@@ -31,7 +31,7 @@ event_stream = "SampleStream"        # Define the stream name where the event wi
 client.append_to_stream(             # Append the event to the SampleStream
     event_stream,                    # Name of the stream to append the event to
     events=[new_event],              # The event to append (in a list)
-    current_version=StreamState.ANY  # Set to append regardless of the current stream state (i.e. disable concurrency check)
+    current_version=StreamState.ANY  # Set to append regardless of the current stream state (you can ignore this for now)
 )
 
 ##############################################
