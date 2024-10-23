@@ -18,7 +18,7 @@ client = EventStoreDBClient(uri="esdb://localhost:2113?tls=false")
 event_type = "SampleEventType"                        # Define the event type for the new event
 new_event = NewEvent(                                 # Create a new event with a type and body
     type=event_type,                                  # Specify the event type
-    data=b'{"Id":"1", "importantData":"some value"}'  # Specify the event data body as a JSON in byte format
+    data=b'{"id":"1", "importantData":"some value"}'  # Specify the event data body as a JSON in byte format
 )
 
 ##################################################
