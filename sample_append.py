@@ -21,14 +21,14 @@ new_event = NewEvent(                                 # Create a new event with 
     data=b'{"Id":"1", "importantData":"some value"}'  # Specify the event data body as a JSON in byte format
 )
 
-########################################################
+##################################################
 #
-# Step 3. Append the event object into the SampleStream
+# Step 3. Append the event object into the stream
 #
-########################################################
+##################################################
 
 event_stream = "SampleStream"        # Define the stream name where the event will be appended
-client.append_to_stream(             # Append the event to the SampleStream
+client.append_to_stream(             # Append the event to a stream
     event_stream,                    # Name of the stream to append the event to
     events=[new_event],              # The event to append (in a list)
     current_version=StreamState.ANY  # Set to append regardless of the current stream state (you can ignore this for now)
