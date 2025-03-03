@@ -15,7 +15,8 @@ from esdbclient import EventStoreDBClient, NewEvent, StreamState    # Import the
 # Replace this line with the connection string to your cluster
 # 
 ###########
-client = EventStoreDBClient(uri="esdb://localhost:2113?tls=false")  
+# client = EventStoreDBClient(uri="esdb://localhost:2113?tls=false") 
+client = EventStoreDBClient("esdb+discover://admin:6906b7791d76454bb4fae6faf590ab06@kurrentdb.curr4icgdub1aodg1sh0.cui3cs4gduba0bunfq60.sites.platform.eventstore.cloud:2113") 
 
 
 
